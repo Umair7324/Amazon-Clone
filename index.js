@@ -10,7 +10,7 @@ const userRouter = require("./routes/user");
 
     
 
-const PORT=3000;
+const PORT=process.env.PORT || 3000;
 
 const DB="mongodb://Umair:umair24171@ac-uyyfdy6-shard-00-00.tfxstyo.mongodb.net:27017,ac-uyyfdy6-shard-00-01.tfxstyo.mongodb.net:27017,ac-uyyfdy6-shard-00-02.tfxstyo.mongodb.net:27017/?ssl=true&replicaSet=atlas-h6bj1h-shard-0&authSource=admin&retryWrites=true&w=majority";
 mongoose.set('strictQuery', false);
